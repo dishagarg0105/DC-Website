@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DC/Wizard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Lato:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="hero">
+        <nav>
+            <h2 class="logo">DC/<span>wizard</span></h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="movies.html" target="_blank">Movies</a></li>
+                <li><a href="shows.html" target="_blank">Shows</a></li>
+                <li><a href="upcoming.html" target="_blank">More </a></li>
+            </ul>
+            <button class="open-button btn" onclick="openForm()">Subscribe</button>
+        </nav>
+
+
+        <div class="content">
+            <h4>Welcome, to the Encylopedia of</h4>
+            <h1>DC COMICS </h1>
+            <h3>A guide to the DC universe.</h3>
+            <h4> Enter your Email for updates <br> </h4> <br> <br>
+            <div class="newsletter">
+                <form>
+                    <input type="email" name="email" id="mail" placeholder="Enter Your mail">
+                    <a href="upcoming.html" id="button">Let's start</a>
+                </form>
+            </div>
+            <!-- <div class="popup">
+                <div class="popup-content">
+                    <img src="close.jpg" alt="" class="close">
+                    <p id="t1">Welcome to  DC Universe!!!!</p>
+                    <p id="t2">Things are about to change from now</p>
+                    <p id="t3">You will get regular updates on your mail,stay connected!</p>
+                    <p id="t4">Happy Surfing!!!!!</p>
+                    
+                </div>
+            </div> -->
+
+        </div>
+
+
+        
+
+        <div class="wrapper">
+            <ul>
+              <li class="facebook"><a href="https://www.facebook.com/DCAsiaOfficial"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+              <li class="twitter"><a href="  https://twitter.com/DCComics?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+              <li class="instagram"><a href=" https://www.instagram.com/dccomics/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+              <li class="google"><a href="https://www.youtube.com/dcentertainment"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a></li>
+              <li class="whatsapp"><a href="  https://www.linkedin.com/company/dc-comics/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+    </div>
+
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Subscribe</h1>
+
+            <label class="email" for="email" style="color: white;"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw" style="color: white;"><b>Mobile number</b></label>
+            <input type="number" placeholder="Enter mobile number" name="psw" required>
+
+            <button type="submit" class="btn">Subscribe</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+
+    <div class="footer">
+        <a href="">Copyright @Aditi Gupta @Dhiren Gupta @Disha Garg</a>
+    </div>
+
+    <script>
+
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+
+
+
+        document.getElementById("button").addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "flex";
+        })
+        document.querySelector(".close").addEventListener("click",function(){
+            document.querySelector(".popup").style.display="none";
+        })
+
+
+    </script>
+
+</body>
+</html>
